@@ -1,2 +1,2 @@
 # SafeDocu
- A decentralized system for storing all your personal data and access them with just one click!
+ A decentralized system to store all your personal data and access them with just one click!
