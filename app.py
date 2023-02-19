@@ -44,10 +44,10 @@ def upload_files():
         files = request.files.getlist("files")
         name = request.form["name"]
         email = request.form["email"]
-        age = request.form["age"]
+        age = int(request.form["age"])
         file_inputs = []
         for file in files:
-            file_inputs.append(file.encode())
+            file_inputs.append(bytes(file.filename, "utf-8"))
             res = client.add(file)
             print(res)
             print("Hash: ", res.get("Hash"))
