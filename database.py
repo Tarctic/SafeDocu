@@ -1,10 +1,9 @@
-from generate_id import result
+# from generate_id import result
 from pymongo import MongoClient
 
 ids = 0
 
-
-def create_database(links):
+def create_database(links, result):
     client = MongoClient("mongodb://localhost:27017/")
     db = client["mydatabase"]
     collection = db["files"]
