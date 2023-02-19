@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SafeDocu</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <form action="uploader" method="post" enctype="multipart/form-data">
+            <br>
+            <label for="files">Select files:</label>
+            <input type="file" id="files" name="files" multiple>
+            <br><br>
+            <input type="submit" value="upload" id="upload" />
+        </form>
+    </body>
+</html>
