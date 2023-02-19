@@ -6,18 +6,27 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     </head>
     <body>
-        <form action="uploader" method="post" enctype="multipart/form-data">
-            <br>
-            <label for="name">Enter name:</label>
-            <input type="text" id="name" name="name">
-            <label for="age">Enter age:</label>
-            <input type="text" id="age" name="age">
-            <label for="email">Enter email:</label>
-            <input type="email" id="email" name="email">
-            <label for="files">Select files:</label>
-            <input type="file" id="files" name="files" multiple>
-            <br><br>
-            <input type="submit" value="upload" id="upload" />
-        </form>
+        <div>
+            <form action="uploader" method="post" enctype="multipart/form-data" id="form-div">
+                <br>
+                <div class="row">
+                    <label for="name">Enter name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="row">
+                    <label for="age">Enter age:</label>
+                    <input type="text" id="age" name="age">
+                </div>
+                <div class="row">
+                    <label for="email">Enter email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="row row-md-auto">
+                    <label for="files">Select files:</label>
+                    <input type="file" id="files" name="files" multiple>
+                </div><br>
+                <input type="submit" value="upload" id="upload" />
+            </form>
+        </div>
     </body>
 </html>

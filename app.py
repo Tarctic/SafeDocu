@@ -57,7 +57,7 @@ def upload_files():
             links = hlink
         result = contract.functions.generateFilesID(name, email, age, file_inputs).call()
         create_database(links, result)
-    return render_template("success.html")
+    return render_template("success.html", link=hlink)
 
 
 if __name__ == "__main__":
