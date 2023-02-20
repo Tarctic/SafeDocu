@@ -26,8 +26,8 @@ address = "0xf5a21117f5e0fF05DdF5C0626f8edDCe1486eE1e"
 # connect to a local Ethereum node
 
 # Set the account address and private key for signing transactions
-account_address = "0x69c14cc30C634F79A07a3BFed69ff11B095Cb099"
-private_key = "ef2896b12a2a55194fcb02c91848483ccd2f1a21b39dc86a536d3aaac87c918c"
+account_address = "YOUR_ACCOUNT_ADDRESS"
+private_key = "YOUR_PRIVATE_KEY"
 
 # get the contract instance
 contract_address = "0xf5a21117f5e0fF05DdF5C0626f8edDCe1486eE1e"
